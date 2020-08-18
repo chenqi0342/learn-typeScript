@@ -51,6 +51,29 @@ class Cat extends Animal{
 const maomao = new Cat('maomao')
 
 console.log(maomao.run())//多态
+
+interface Raido{
+    switchRaido(triggerL: boolean): void
+}
+
+interface Battery{
+    checkBatteryStatus()
+}
+class Car implements Raido{
+    switchRaido() {
+        
+    }
+}
+
+class cellPhone implements Raido, Battery{
+    switchRaido() {
+        
+    }
+    checkBatteryStatus() {
+        
+    }
+}
+
 //面向对象的特点
 //class类
 //对象 类的实例
